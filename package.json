@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib --name huychongxang-dummylib src/main.js",
+    "build-lib": "vue-cli-service build --target lib --name huychongxang-dummylib ./src/main.js",
     "lint": "vue-cli-service lint"
   },
   "main": "./dist/huychongxang-dummylib.common.js",
