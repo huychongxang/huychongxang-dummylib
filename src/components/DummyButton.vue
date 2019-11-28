@@ -1,29 +1,22 @@
 <template>
-  <div>
-    <button @click="increment">{{ text }}</button>
-  </div>
+    <div>
+        <button @click="SET_COUNT">{{ getCount }}</button>
+    </div>
 </template>
 <script>
+import { mapGetters, mapMutations } from "vuex";
 export default {
-  data () {
-    return {
-      count: 0
-    }
-  },
-  computed: {
-    times () {
-      return this.count > 1
-        ? 'times'
-        : 'time'
+    data() {
+        return {
+        };
     },
-    text () {
-      return `I have been clicked ${this.count} ${this.times}`
+    computed: {
+        ...mapGetters(["getCount"]),
+    },
+    methods: {
+      ...mapMutations([
+        'SET_COUNT',
+      ]),
     }
-  },
-  methods: {
-    increment () {
-      this.count += 1
-    }
-  }
-}
+};
 </script>
