@@ -1,6 +1,6 @@
 import DummyButton from "./components/DummyButton.vue";
 import Other from './components/Other.vue';
-// import store from "./store/index.js";
+import store from "./store/index.js";
 export default {
     install(Vue, options) {
         if (!options || !options.store) {
