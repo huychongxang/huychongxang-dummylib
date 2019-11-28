@@ -10,6 +10,7 @@
     "new-build": "vue-cli-service build --target lib src/plugin.js"
   },
   "main": "./dist/huychongxang-dummylib.common.js",
+  "files":["dist"],
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
