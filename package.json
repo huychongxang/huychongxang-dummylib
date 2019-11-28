@@ -1,6 +1,6 @@
 {
   "name": "huychongxang-dummylib",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,7 +10,9 @@
     "new-build": "vue-cli-service build --target lib src/plugin.js"
   },
   "main": "./dist/huychongxang-dummylib.common.js",
-  "files":["dist"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
