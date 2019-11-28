@@ -7,7 +7,7 @@ export default {
             throw new Error("Please initialise plugin with a Vuex store");
         }
 
-        // options.store.registerModule("huychongxang-dummylib", store);
+        options.store.registerModule("huychongxang-dummylib", store);
         Vue.component("dummy-button", DummyButton);
         Vue.component("dummy-other", Other);
     }
